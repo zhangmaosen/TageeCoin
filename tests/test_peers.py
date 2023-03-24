@@ -2,7 +2,7 @@ from unittest.mock import patch, AsyncMock
 
 import pytest
 
-from funcoin.peers import P2PProtocol
+from tageecoin.peers import P2PProtocol
 
 
 @pytest.mark.asyncio
@@ -55,7 +55,7 @@ async def test_handle_block(writer, server, block_message):
 async def test_handle_peers(mocker, writer, server, peers_message):
     msg = peers_message()
 
-    m = mocker.patch("funcoin.peers.asyncio")
+    m = mocker.patch("tageecoin.peers.asyncio")
     m.open_connection = AsyncMock()
     m.open_connection.return_value = mocker.Mock(), mocker.Mock()
 

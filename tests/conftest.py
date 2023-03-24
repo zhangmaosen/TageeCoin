@@ -5,14 +5,14 @@ from time import time
 
 import pytest
 
-from funcoin.blockchain import Blockchain
-from funcoin.messages import (
+from tageecoin.blockchain import Blockchain
+from tageecoin.messages import (
     create_peers_message,
     create_ping_message,
     create_transaction_message,
     create_block_message,
 )
-from funcoin.transactions import create_transaction
+from tageecoin.transactions import create_transaction
 
 
 @pytest.fixture

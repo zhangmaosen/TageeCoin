@@ -1,4 +1,4 @@
-from funcoin.transactions import create_transaction, validate_transaction
+from tageecoin.transactions import create_transaction, validate_transaction
 
 
 def test_create_transaction(keys):
